@@ -55,6 +55,12 @@ def main():
 
     print("It took you " + str(count) + " guesses.")
 
+    replay = input("Would you like to replay? (y/n)\n")
+    if replay == "y":
+        main()
+    else:
+        exit
+
 
 if __name__ == '__main__':
     main()
